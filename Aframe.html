@@ -6,18 +6,50 @@
     </head>
     <body>
         <a-scene background="color: #c7d8ff">
+            <!-- tree trunk -->
             <a-cone color="#433519"
                 height="10"
                 radius-bottom="2.5"
                 radius-top="0.5"
-                position="0, 1, -10">
+                position="0 1 -10">
             </a-cone>
+
+            <!-- right branch -->
+            <a-cylinder color="#433519"
+                height="3.5"
+                radius="0.25"
+                rotation="0 0 -60"
+                position="1.5 6.5 -10">
+            </a-cylinder>
+            <!-- left branch -->
+            <a-cylinder color="#433519"
+                height="3.5"
+                radius="0.25"
+                rotation="0 0 60"
+                position="-1.5 6.5 -10">
+            </a-cylinder>
+            <!-- front branch -->
+            <a-cylinder color="#433519"
+                height="3.5"
+                radius="0.25"
+                rotation="60 0 0"
+                position="0 6.5 -8.5">
+            </a-cylinder>
+            <!-- back branch -->
+            <a-cylinder color="#433519"
+                height="3.5"
+                radius="0.25"
+                rotation="-60 0 0"
+                position="0 6.5 -11.5">
+            </a-cylinder>
+
+            <!-- base box -->
             <a-box 
                 color="#827962"
                 width="100"
                 height="0.5"
                 depth="100"
-                position="0, -5, -10">
+                position="0 -5 -10">
             </a-box>
         </a-scene>
     </body>
